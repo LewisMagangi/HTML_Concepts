@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .centered-box {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Align items horizontally within the container */
+      height: 150px; /* Increased height for better visibility */
+      background-color: #e0e0e0;
+      margin-top: 20px;
+    }
+
+    .flex-item {
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .align-self-center {
+      align-self: center; /* Align this item vertically to the center within the flex container */
+    }
+  </style>
+  <title>Alignment Example</title>
+</head>
+<body>
+  <div class="centered-box">
+    <p>This is centered using <code>margin: auto;</code></p>
+  </div>
+
+  <!-- The following section is centered using Flexbox -->
+  <div class="flex-container">
+    <p>This is centered using Flexbox</p>
+    <div class="flex-item align-self-center"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+</body>
+</html>
